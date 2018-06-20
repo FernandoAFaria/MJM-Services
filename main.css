@@ -4,30 +4,79 @@ body {
 }
 
 header {
+    background-color: #140894;
+    height: 65px;
+}
 
-    background-color: #56a5cc;
-    height: 150px;
-}
-.container{
-    padding-top: 25px;
+.navContainer {
     display: flex;
-    width:100%;
+    width: 100%;
+    height: 65px;
+    align-items: flex-end;
+    justify-content: space-between;
 }
-.container div{
-    border: 1px solid black;
+
+.logo {
+    margin-left: 15px;
 }
-.logo{
-  flex: 1;
-   
-}
+
 .nav ul li {
     display: inline;
     margin-right: 15px;
-    font-size: 2em;
-    
-    
+    font-size: 1.5em;
 }
-a{
+
+.nav {}
+
+a {
+    color: white;
     text-decoration: none;
     list-style-type: none;
+    font-weight: bold;
+}
+
+.nav nav ul li a:hover {
+    color: pink;
+}
+
+.container {
+    height: 90vh;
+    display: flex;
+   
+}
+
+@media(max-width:786px){
+.container{flex-direction: column;}
+.rightbox{background-position-x: -300px;}
+}
+
+.leftbox {
+    display: flex;
+    flex: 1;
+    padding: 0px;
+    background: white;
+    margin: auto;/* centers in page*/
+    flex-direction: column;/* stacks the 2 divs on top of each other*/
+   
+}
+
+.leftbox,
+.body {
+    align-items: center;
+    
+}
+.body{
+    width: 75%;
+}
+p {
+    line-height: 1.5em;
+    font-size: 1.5em;
+}
+
+.rightbox {
+    flex: 1;
+    background: url("./imgs/warehouseclean1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
