@@ -5,9 +5,7 @@
     color: white;
     line-height: 1.6;
 }
-body{
-   
-}
+
 .container{
     display: flex;
     justify-content: center;
@@ -22,19 +20,56 @@ body{
 }
 .logo img{
     width: calc(25vw);
+    min-width: 345px;
 }
 .left{
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-basis: 35%;
+    min-width: 400px;
+    
+}
+.text h1{
     text-align: center;
+    margin-bottom: 65px;
+    font-size: 55px;
 }
+ul li{
+    width: 100%;
+    font-size: 22px;
+    list-style: none;
+    margin-bottom: 60px;
+}
+li i{
+    color: white;
 
+    font-size: 55px;
+
+}
+li img{
+    width: 65px;
+    float: right;
+    margin-right: 100px;
+    transition-duration: .3s;
+}
 .text{
-    padding: 35px;
+    padding: 15px;
 }
-
+.fas{
+    float: right;
+    margin-right: 100px;
+    transition-duration: .3s;
+}
+.fas:hover{
+    font-size: 3.3em;
+}
+.fas:hover ul li::before{
+    content: "Forklift certified"
+}
+li img:hover{
+    width: 85px;
+}
 
 .right{
     flex-basis: 65%;
@@ -42,4 +77,9 @@ body{
     background: url('./imgs/warehouseclean1.jpg');
     background-size: cover;
     background-position: center;
+}
+@media(max-width: 390px){
+    .right{
+        display: none;
+    }
 }
