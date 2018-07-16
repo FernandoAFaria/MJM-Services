@@ -1,82 +1,45 @@
-body {
-    margin: 0px;
-    padding: 0px;
-}
-
-header {
-    background-color: #140894;
-    height: 65px;
-}
-
-.navContainer {
-    display: flex;
-    width: 100%;
-    height: 65px;
-    align-items: flex-end;
-    justify-content: space-between;
-}
-
-.logo {
-    margin-left: 15px;
-}
-
-.nav ul li {
-    display: inline;
-    margin-right: 15px;
-    font-size: 1.5em;
-}
-
-.nav {}
-
-a {
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
     color: white;
-    text-decoration: none;
-    list-style-type: none;
-    font-weight: bold;
+    line-height: 1.6;
 }
-
-.nav nav ul li a:hover {
-    color: pink;
-}
-
-.container {
-    height: 90vh;
-    display: flex;
+body{
    
 }
-
-@media(max-width:786px){
-.container{flex-direction: column;}
-.rightbox{background-position-x: -300px;}
-}
-
-.leftbox {
+.container{
     display: flex;
-    flex: 1;
-    padding: 0px;
-    background: white;
-    margin: auto;/* centers in page*/
-    flex-direction: column;/* stacks the 2 divs on top of each other*/
-   
+    justify-content: center;
+    height: 1000px;
+    background: rgb(82, 163, 255);
+}
+.logo{
+    position: absolute;
+    top: 20px;
+    left: calc(2vh);
+ 
+}
+.logo img{
+    width: calc(25vw);
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 35%;
+    text-align: center;
 }
 
-.leftbox,
-.body {
-    align-items: center;
-    
-}
-.body{
-    width: 75%;
-}
-p {
-    line-height: 1.5em;
-    font-size: 1.5em;
+.text{
+    padding: 35px;
 }
 
-.rightbox {
-    flex: 1;
-    background: url("./imgs/warehouseclean1.jpg");
-    background-repeat: no-repeat;
+
+.right{
+    flex-basis: 65%;
+    height: 100%;
+    background: url('./imgs/warehouseclean1.jpg');
     background-size: cover;
     background-position: center;
 }
