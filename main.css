@@ -30,6 +30,8 @@
 .left{
     flex-basis: 65%;
     height: 100%;
+    text-align: center;
+    
 }
 
 .right{
@@ -43,5 +45,36 @@
 
 .left header{
     text-align: center;
-    margin-top: 71px;
+    margin-top: 65px;
+    
+}
+
+#navigation:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+a{
+    font-size: 1.6em;
+    text-decoration: none;
+    color:#6E6E6E;
+    text-shadow: 5px 5px 10px grey;
+}
+a:hover{
+
+    color: #C45500;
+    font-weight: bold;
+}
+.selected{
+    color:rgb(80, 70, 62);
+    font-style: italic;
+}
+#navigation {
+    height: 1.15em;
+    line-height: 1.15;
+    margin: 65px auto 0 auto;
+    width:65%;
+    font-size:20px;    
+    text-align:justify;
+
 }
